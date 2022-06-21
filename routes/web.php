@@ -35,3 +35,5 @@ Route::resource('/employee' , EmployeeController::class)->middleware(['auth']);
 // Route::post('/employee', [EmployeeController::class, 'store']);
 
 Route::put('/update',[MemberController::class,'store']);
+Route::get('/cache',[MemberController::class,'cache']);
+Route::get('/get_cache',[MemberController::class,'get']);
